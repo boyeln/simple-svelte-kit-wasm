@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Simple wasm</h1>
+
+<ul>
+    <li>
+        <a href="/ssr">WASM with SSR</a>
+    </li>
+    <li>
+        <a href="/no-ssr">WASM without SSR</a>
+    </li>
+</ul>
