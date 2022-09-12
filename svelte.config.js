@@ -1,12 +1,12 @@
-import adapter from '@sveltejs/adapter-auto';
-import wasm from "vite-plugin-wasm";
+import adapter from '@sveltejs/adapter-node';
+import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	preprocess: preprocess({
+		sourceMap: true,
+	}),
 	kit: {
-		vite: {
-			plugins: [wasm()]
-		},
 		adapter: adapter()
 	}
 };
